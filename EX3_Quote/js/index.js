@@ -207,7 +207,7 @@ function changeQuote() {
     let qtext = document.getElementById('quoteText');
     let qauthor = document.getElementById('authorName');
 
-    let randomNumber = Math.floor(Math.random() * 65);
+    let randomNumber = Math.floor(Math.random() * (dataQuote.length - 1));
     let textRandom = dataQuote[randomNumber].quoteText;
     let authoRamdom = dataQuote[randomNumber].quoteAuthor;
 
